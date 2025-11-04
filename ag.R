@@ -6,9 +6,6 @@ library(plm)
 
 # 1. Importadno os dados ####
 
-# Defina o seu projeto no Google Cloud
-set_billing_id("crucial-pagoda-476121-p4")
-
 
 query <- "
 SELECT
@@ -149,3 +146,4 @@ reg_painel <- plm(formula, data = df_painel, model = "pooling")
 summary(reg_painel)
 
 alias(lm(formula, data = df_painel))
+
