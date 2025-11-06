@@ -12,7 +12,7 @@ library(tidyr)
 # 1. Importadno os dados ####
 
 # Defina o seu projeto no Google Cloud
-set_billing_id("crucial-pagoda-476121-p4")
+set_billing_id("")
 
 
 query <- "
@@ -222,5 +222,6 @@ plot(modelo_final)
 plot(modelo_final$residuals)
 
 # 7. ajustandoo modelo escolhido ####
+
 
 df_painel$pop <- df_painel
